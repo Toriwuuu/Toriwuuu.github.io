@@ -880,6 +880,11 @@ footer .topbtn:hover svg {
     padding-top: 150px;
   }
 }
+@media (max-width: 640px) {
+  .wrap .bannerContainer {
+    padding-top: 0;
+  }
+}
 .wrap .bannerContainer .bannerImg {
   display: flex;
   flex-direction: column;
@@ -895,7 +900,7 @@ footer .topbtn:hover svg {
 }
 @media (max-width: 640px) {
   .wrap .bannerContainer .bannerImg {
-    width: 100%;
+    width: 95%;
   }
 }
 .wrap .bannerContainer .bannerImg img {

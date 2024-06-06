@@ -803,6 +803,10 @@ footer {
         @media (max-width:992px) {
             padding-top: 150px;
         }
+        
+        @media (max-width:640px) {
+            padding-top: 0;
+        }
 
         .bannerImg {
             display: flex;
@@ -817,7 +821,7 @@ footer {
             }
 
             @media (max-width:640px) {
-                width: 100%;
+                width: 95%;
             }
 
             img {
