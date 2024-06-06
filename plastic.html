@@ -16,7 +16,7 @@
             <a href="index.html"><img src="./img/title.svg" alt="Tori's Artwork"></a>
         </h1>
         <div class="nav-box">
-        
+
             <button class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,11 +35,8 @@
 
     <main class="wrap">
         <div class="box">
-            <div class="cycle-slideshow" 
-            data-cycle-fx="scrollHorz"
-            data-cycle-timeout="4000"
-            data-cycle-prev="#prev"
-            data-cycle-next="#next">
+            <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="4000" data-cycle-prev="#prev"
+                data-cycle-next="#next">
                 <img src="./img/plastic/2018/02.jpg" alt="">
                 <img src="./img/plastic/2021/02.jpg" alt="">
                 <img src="./img/plastic/2022/d01.jpg" alt="">
@@ -52,7 +49,7 @@
                 <img src="./img/plastic/2022/15.jpg" alt="">
             </div>
             <div id="prev">&lt;</div>
-<div id="next">&gt;</div>
+            <div id="next">&gt;</div>
 
             <!-- 導覽列 -->
             <!--             
@@ -201,11 +198,24 @@
                     Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
                     can also buy my works in the SHOP. Have a nice day!</span>
 
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+
+
             </div>
 
         </div>
         <div class="contactTable">
-            <div class="contactText"><p>CONTACT</p>
+            <div class="contactText">
+                <p>CONTACT</p>
                 <nav class="contactIcon">
                     <ul class="icon">
                         <li><a href="#" class="icon-ig"></a></li>
@@ -216,15 +226,15 @@
             </div>
         </div>
 
-        <div class="topbtn"><p>TOP</p><svg width="85" height="43" viewBox="0 0 85 43" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <div class="topbtn">
+            <p>TOP</p><svg width="85" height="43" viewBox="0 0 85 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M83.129 40.4644C81.9307 41.4945 80.3056 42.0732 78.6111 42.0732C76.9166 42.0732 75.2915 41.4945 74.0932 40.4644L42.4614 13.2638L10.8296 40.4644C9.62443 41.4653 8.01023 42.0192 6.33473 42.0067C4.65923 41.9942 3.05647 41.4163 1.87166 40.3974C0.686852 39.3786 0.0148087 38.0004 0.000244141 36.5596C-0.0143127 35.1188 0.629791 33.7307 1.79382 32.6943L37.9435 1.60873C39.1419 0.578568 40.767 -0.000148773 42.4614 -0.000148773C44.1559 -0.000148773 45.781 0.578568 46.9793 1.60873L83.129 32.6943C84.327 33.7248 85 35.1223 85 36.5793C85 38.0364 84.327 39.4339 83.129 40.4644Z"
                     fill="white" />
             </svg>
         </div>
 
-    </footer>    
+    </footer>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/jquery.cycle2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -233,139 +243,139 @@
 
 
 
-<script>
-$(document).ready(function () {
+    <script>
+        $(document).ready(function () {
 
-                // 漢堡
-                $('.hamburger').click(function () {
+            // 漢堡
+            $('.hamburger').click(function () {
                 // 交替 三 跟 X
                 $(this).toggleClass('is-active');
                 $('.menu').toggleClass('show');
                 $('.menu').toggleClass('hide');
             });
 
-    // 頁首滾動效果
-    let lastScrollTop = 0; // 上次滚动的位置
-    let headerHeight = $('#topbar').outerHeight(); // 获取页眉的高度
+            // 頁首滾動效果
+            let lastScrollTop = 0; // 上次滚动的位置
+            let headerHeight = $('#topbar').outerHeight(); // 获取页眉的高度
 
-    $(window).scroll(function () {
-        let currentScroll = $(this).scrollTop(); // 获取当前滚动位置
+            $(window).scroll(function () {
+                let currentScroll = $(this).scrollTop(); // 获取当前滚动位置
 
-        // 判断滚动方向以及是否滚动到了页眉的下方
-        if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
-            $('#topbar').css({
-                'top': -headerHeight + 'vh', // 向上隐藏页眉
-                'transition': 'top 1s' // 添加过渡效果
+                // 判断滚动方向以及是否滚动到了页眉的下方
+                if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+                    $('#topbar').css({
+                        'top': -headerHeight + 'vh', // 向上隐藏页眉
+                        'transition': 'top 1s' // 添加过渡效果
+                    });
+                } else if (currentScroll === 0) {
+                    // 滚动到顶部时，显示页眉
+                    $('#topbar').css({
+                        'top': '0', // 显示页眉
+                        'transition': 'top 0.3s' // 添加过渡效果
+                    });
+                }
+
+                lastScrollTop = currentScroll; // 更新上次滚动的位置
             });
-        } else if (currentScroll === 0) {
-            // 滚动到顶部时，显示页眉
-            $('#topbar').css({
-                'top': '0', // 显示页眉
-                'transition': 'top 0.3s' // 添加过渡效果
-            });
-        }
 
-        lastScrollTop = currentScroll; // 更新上次滚动的位置
-    });
-
-    // 检查元素是否可见
-    function checkVisible(elm) {
-        var rect = elm.getBoundingClientRect(); // 获取元素的位置信息
-        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight); // 获取视窗的高度
-        return !(rect.bottom < 0 || rect.top - viewHeight >= 0); // 判断元素是否在视窗内
-    }
-
-    // 显示可见的年份
-    function showVisibleYears() {
-        $(".year").each(function () {
-            if (checkVisible(this)) {
-                $(this).addClass("visible"); // 添加可见的类
+            // 检查元素是否可见
+            function checkVisible(elm) {
+                var rect = elm.getBoundingClientRect(); // 获取元素的位置信息
+                var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight); // 获取视窗的高度
+                return !(rect.bottom < 0 || rect.top - viewHeight >= 0); // 判断元素是否在视窗内
             }
-        });
-    }
 
-    showVisibleYears(); // 页面加载时显示可见的年份
-
-    $(window).scroll(function () {
-        showVisibleYears(); // 滚动时显示可见的年份
-    });
-
-    $(".expanded-images").hide(); // 隐藏展开的图片区域
-
-    $(".yearimg").click(function () {
-        let yearImg = $(this); // 获取点击的年份图片
-        let yearContainer = yearImg.closest('.year'); // 获取年份图片所在的容器
-        let expandedImages = yearImg.siblings('.expanded-images'); // 获取展开的图片区域
-
-        // 判断展开的图片区域是否可见
-        if (expandedImages.is(":visible")) {
-            // 如果已经展开，则收起展开的图片区域
-            expandedImages.slideUp(300);
-            yearImg.removeClass('move-left'); // 移除向左移动的类
-        } else {
-            // 如果展开的图片区域不可见
-            if ($(".expanded-images").is(":visible")) {
-                // 如果已经有其他年份的图片区域是展开状态，则收起其他年份的图片区域
-                $(".expanded-images:visible").slideUp(300, function() {
-                    $(".yearimg").removeClass('move-left'); // 移除其他年份图片的向左移动类
-                    moveAndExpand(yearContainer, yearImg); // 移动并展开当前年份的图片区域
+            // 显示可见的年份
+            function showVisibleYears() {
+                $(".year").each(function () {
+                    if (checkVisible(this)) {
+                        $(this).addClass("visible"); // 添加可见的类
+                    }
                 });
-            } else {
-                // 如果没有其他年份的图片区域是展开状态，则直接移动并展开当前年份的图片区域
-                moveAndExpand(yearContainer, yearImg);
             }
-        }
-    });
 
-    // 移动并展开图片区域
-    function moveAndExpand(yearContainer, yearImg) {
-        let offset = yearContainer.offset().top; // 获取年份容器相对于文档顶部的偏移量
-        $('html, body').animate({ scrollTop: offset }, 300, function() {
-            yearImg.addClass('move-left'); // 添加向左移动的类
-            let expandedImages = yearImg.siblings('.expanded-images'); // 获取展开的图片区域
-            setTimeout(function() {
-                expandedImages.slideDown(500); // 展开图片区域
-            }, 500);
+            showVisibleYears(); // 页面加载时显示可见的年份
+
+            $(window).scroll(function () {
+                showVisibleYears(); // 滚动时显示可见的年份
+            });
+
+            $(".expanded-images").hide(); // 隐藏展开的图片区域
+
+            $(".yearimg").click(function () {
+                let yearImg = $(this); // 获取点击的年份图片
+                let yearContainer = yearImg.closest('.year'); // 获取年份图片所在的容器
+                let expandedImages = yearImg.siblings('.expanded-images'); // 获取展开的图片区域
+
+                // 判断展开的图片区域是否可见
+                if (expandedImages.is(":visible")) {
+                    // 如果已经展开，则收起展开的图片区域
+                    expandedImages.slideUp(300);
+                    yearImg.removeClass('move-left'); // 移除向左移动的类
+                } else {
+                    // 如果展开的图片区域不可见
+                    if ($(".expanded-images").is(":visible")) {
+                        // 如果已经有其他年份的图片区域是展开状态，则收起其他年份的图片区域
+                        $(".expanded-images:visible").slideUp(300, function () {
+                            $(".yearimg").removeClass('move-left'); // 移除其他年份图片的向左移动类
+                            moveAndExpand(yearContainer, yearImg); // 移动并展开当前年份的图片区域
+                        });
+                    } else {
+                        // 如果没有其他年份的图片区域是展开状态，则直接移动并展开当前年份的图片区域
+                        moveAndExpand(yearContainer, yearImg);
+                    }
+                }
+            });
+
+            // 移动并展开图片区域
+            function moveAndExpand(yearContainer, yearImg) {
+                let offset = yearContainer.offset().top; // 获取年份容器相对于文档顶部的偏移量
+                $('html, body').animate({ scrollTop: offset }, 300, function () {
+                    yearImg.addClass('move-left'); // 添加向左移动的类
+                    let expandedImages = yearImg.siblings('.expanded-images'); // 获取展开的图片区域
+                    setTimeout(function () {
+                        expandedImages.slideDown(500); // 展开图片区域
+                    }, 500);
+                });
+            }
+
+            $(".expanded-images").click(function (e) {
+                let parentWidth = $(this).width(); // 获取父容器的宽度
+                let clickX = e.pageX - $(this).offset().left; // 获取点击位置相对于父容器左侧的偏移量
+
+                // 根据点击位置判断滚动方向并滚动图片区域
+                if (clickX > parentWidth / 2) {
+                    $(this).animate({ scrollLeft: '+=500' }, 350);
+                } else {
+                    $(this).animate({ scrollLeft: '-=500' }, 350);
+                }
+            });
+
+
+            $(".expanded-images").mousemove(function (e) {
+                let parentWidth = $(this).width(); // 获取父容器的宽度
+                let offset = $(this).offset(); // 获取父容器的偏移量
+                let relativeX = e.pageX - offset.left; // 获取鼠标位置相对于父容器左侧的偏移量
+
+                // 根据鼠标位置设置不同的光标样式
+                if (relativeX > parentWidth / 2) {
+                    $(this).css('cursor', 'url("./img/right-arrow.png"), auto');
+                } else {
+                    $(this).css('cursor', 'url("./img/left-arrow.png"), auto');
+                }
+            });
+
+
+            // 返回顶部按钮点击事件
+            $('.topbtn svg').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 'slow'); // 平滑滚动到顶部
+            });
+
+            $(function () {
+                $(".cycle-slideshow").cycle(); // 初始化轮播
+            });
         });
-    }
-
-    $(".expanded-images").click(function (e) {
-        let parentWidth = $(this).width(); // 获取父容器的宽度
-        let clickX = e.pageX - $(this).offset().left; // 获取点击位置相对于父容器左侧的偏移量
-
-        // 根据点击位置判断滚动方向并滚动图片区域
-        if (clickX > parentWidth / 2) {
-            $(this).animate({ scrollLeft: '+=500' }, 350);
-        } else {
-            $(this).animate({ scrollLeft: '-=500' }, 350);
-        }
-    });
-
-
-       $(".expanded-images").mousemove(function (e) {
-        let parentWidth = $(this).width(); // 获取父容器的宽度
-        let offset = $(this).offset(); // 获取父容器的偏移量
-        let relativeX = e.pageX - offset.left; // 获取鼠标位置相对于父容器左侧的偏移量
-
-        // 根据鼠标位置设置不同的光标样式
-        if (relativeX > parentWidth / 2) {
-            $(this).css('cursor', 'url("./img/right-arrow.png"), auto');
-        } else {
-            $(this).css('cursor', 'url("./img/left-arrow.png"), auto');
-        }
-    });
-
-
-    // 返回顶部按钮点击事件
-    $('.topbtn svg').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 'slow'); // 平滑滚动到顶部
-    });
-
-    $(function () {
-        $(".cycle-slideshow").cycle(); // 初始化轮播
-    });
-});
-</script>
+    </script>
 
 </body>
 

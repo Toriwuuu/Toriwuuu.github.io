@@ -16,7 +16,7 @@
             <a href="index.html"><img src="./img/title.svg" alt="Tori's Artwork"></a>
         </h1>
         <div class="nav-box">
-          
+
             <button class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -31,9 +31,9 @@
                                 d="M34 36C31.78 36 30 37.78 30 40C30 41.0609 30.4214 42.0783 31.1716 42.8284C31.9217 43.5786 32.9391 44 34 44C35.0609 44 36.0783 43.5786 36.8284 42.8284C37.5786 42.0783 38 41.0609 38 40C38 38.9391 37.5786 37.9217 36.8284 37.1716C36.0783 36.4214 35.0609 36 34 36ZM2 4V8H6L13.2 23.18L10.48 28.08C10.18 28.64 10 29.3 10 30C10 31.0609 10.4214 32.0783 11.1716 32.8284C11.9217 33.5786 12.9391 34 14 34H38V30H14.84C14.7074 30 14.5802 29.9473 14.4864 29.8536C14.3927 29.7598 14.34 29.6326 14.34 29.5C14.34 29.4 14.36 29.32 14.4 29.26L16.2 26H31.1C32.6 26 33.92 25.16 34.6 23.94L41.76 11C41.9 10.68 42 10.34 42 10C42 9.46957 41.7893 8.96086 41.4142 8.58579C41.0391 8.21071 40.5304 8 40 8H10.42L8.54 4M14 36C11.78 36 10 37.78 10 40C10 41.0609 10.4214 42.0783 11.1716 42.8284C11.9217 43.5786 12.9391 44 14 44C15.0609 44 16.0783 43.5786 16.8284 42.8284C17.5786 42.0783 18 41.0609 18 40C18 38.9391 17.5786 37.9217 16.8284 37.1716C16.0783 36.4214 15.0609 36 14 36Z"
                                 fill="#E931CC" />
                         </svg>
-                
+
                     </button>
-                
+
                     <li><a href="index.html">DIGITAL ART</a></li>
                     <li><a href="plastic.html">PLASTIC ART</a></li>
                     <li><a href="shop.html">SHOP</a></li>
@@ -203,6 +203,16 @@
                     Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
                     can also buy my works in the SHOP. Have a nice day!</span>
 
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+
             </div>
 
         </div>
@@ -235,8 +245,8 @@
     <script>
         $(document).ready(function () {
 
-                        // 漢堡
-                        $('.hamburger').click(function () {
+            // 漢堡
+            $('.hamburger').click(function () {
                 // 交替 三 跟 X
                 $(this).toggleClass('is-active');
                 $('.menu').toggleClass('show');
@@ -246,10 +256,10 @@
             // 頁首滾動效果
             let lastScrollTop = 0;
             let headerHeight = $('#topbar').outerHeight();
-    
+
             $(window).scroll(function () {
                 let currentScroll = $(this).scrollTop();
-    
+
                 if (currentScroll > lastScrollTop) {
                     // 往下滾動，隱藏 header
                     $('#topbar').css({
@@ -265,44 +275,44 @@
                 }
                 lastScrollTop = currentScroll;
             });
-    
+
             // 圖像交換
             $('.smallImg img').click(function () {
                 let bigImg = $('.bigImg img');
                 bigImg.attr('src', $(this).attr('src'));
             });
-    
+
             $('.bigImg img').click(function () {
                 let lightbox = $('#lightbox');
                 let lightboxImg = $('#lightbox-img');
                 let smallImages = $('.smallImg img');
-    
+
                 // 設置燈箱中的大圖像為當前的大圖像
                 lightboxImg.attr('src', $(this).attr('src'));
-    
+
                 // 清空燈箱中的縮略圖
                 $('.lightbox-thumbnails').empty();
-    
+
                 // 動態生成縮略圖並添加到燈箱
                 smallImages.each(function () {
                     let thumbnail = $('<img>').attr('src', $(this).attr('src'));
                     $('.lightbox-thumbnails').append(thumbnail);
                 });
-    
+
                 // 顯示燈箱
                 lightbox.show();
-    
+
                 // 點擊縮略圖切換大圖像
                 $('.lightbox-thumbnails img').click(function () {
                     lightboxImg.attr('src', $(this).attr('src'));
                 });
-    
+
                 // 點擊關閉燈箱
                 $('.close').click(function () {
                     lightbox.hide();
                 });
             });
-    
+
             // 顯示購物車和覆蓋層
             $('.atc').click(function () {
                 $('.overlay2').fadeIn(); // 顯示覆蓋層
@@ -312,8 +322,8 @@
                 $('.overlay2').fadeIn(); // 顯示覆蓋層
                 $('#incart').css('right', '0'); // 顯示購物車
             });
-    
-    
+
+
             // 隱藏購物車和覆蓋層
             $('.cancel').click(function () {
                 $('.overlay2').fadeOut(); // 隱藏覆蓋層
@@ -323,10 +333,10 @@
                 $(this).fadeOut(); // 隱藏覆蓋層
                 $('#incart').css('right', '-500px'); // 隱藏購物車
             });
-    
+
             // 假設每個商品的基礎價格
             var basePrice = 10000; // 根據你的需求設置基礎價格
-    
+
             // 函數用於更新 atc 和 incart 中的價格
             function updatePriceAndQuantity(num) {
                 var totalPrice = basePrice * num;
@@ -334,7 +344,7 @@
                 $('.incartPrice').text('$' + totalPrice.toFixed(0)); // 更新 incart 中的價格
                 $('.quaNum').text(num); // 同步更新 quaNum
             }
-    
+
             // 點擊 quaMinus 減少 quaNum 值
             $('.quaMinus').click(function () {
                 var num = parseInt($(this).siblings('.quaNum').text()); // 獲取當前 quaNum 的值
@@ -343,7 +353,7 @@
                     updatePriceAndQuantity(num); // 更新價格和數量
                 }
             });
-            
+
             // 點擊 quaPlus 增加 quaNum 值
             $('.quaPlus').click(function () {
                 var num = parseInt($(this).siblings('.quaNum').text()); // 獲取當前 quaNum 的值
@@ -351,27 +361,27 @@
                 updatePriceAndQuantity(num); // 更新價格和數量
 
             });
-    
+
             // 初始化時更新價格
             var initialNum = parseInt($('.quaNum').text());
             updatePriceAndQuantity(initialNum);
-    
+
             $('.topbtn svg').click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
             });
         });
 
-        $('.bn').click(function(){
+        $('.bn').click(function () {
             $('.bn').text('Thank You!')
         });
 
-        $('.incartTotal button').click(function(){
+        $('.incartTotal button').click(function () {
             $('.incartTotal button').text('Thank You!')
         });
 
 
     </script>
-    
+
 
 </body>
 

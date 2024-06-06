@@ -386,6 +386,15 @@
                 <span>
                     Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
                     can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
 
             </div>
 
@@ -433,10 +442,10 @@
             // 頁首滾動效果
             let lastScrollTop = 0;
             let headerHeight = $('#topbar').outerHeight();
-    
+
             $(window).scroll(function () {
                 let currentScroll = $(this).scrollTop();
-    
+
                 if (currentScroll > lastScrollTop) {
                     // 往下滾動，隱藏 header
                     $('#topbar').css({
@@ -455,25 +464,25 @@
 
 
             $(function () {
-    var bannerImg = $(".bannerImg img");
+                var bannerImg = $(".bannerImg img");
 
-    function setImgWidth() {
-        var containerWidth = $(".bannerImg").width();
-        bannerImg.css("max-width", containerWidth);
-    }
+                function setImgWidth() {
+                    var containerWidth = $(".bannerImg").width();
+                    bannerImg.css("max-width", containerWidth);
+                }
 
-    // 初始化时设置图片宽度
-    setImgWidth();
+                // 初始化时设置图片宽度
+                setImgWidth();
 
-    // 窗口大小改变时重新设置图片宽度
-    $(window).resize(function () {
-        setImgWidth();
-    });
+                // 窗口大小改变时重新设置图片宽度
+                $(window).resize(function () {
+                    setImgWidth();
+                });
 
-    $(".cycle-slideshow").cycle({
-        pager: '.cycle-pager' // 指定页码圆点的容器
-    }); // 初始化轮播
-});
+                $(".cycle-slideshow").cycle({
+                    pager: '.cycle-pager' // 指定页码圆点的容器
+                }); // 初始化轮播
+            });
 
 
             $('.topbtn svg').click(function () {
@@ -508,7 +517,7 @@
                     'color': '#E931CC',
                     'background-color': 'white'
                 });
-                
+
                 // 更新購物車數量並顯示在 .cart 的右上角
                 cartCount++;
                 $(".cart-count").text(cartCount).show();
@@ -533,30 +542,30 @@
 
         });
 
-/*         // 顯示購物車和覆蓋層
-        $('.atc').click(function () {
-            $('.overlay2').fadeIn(); // 顯示覆蓋層
-            $('#incart').css('right', '0'); // 顯示購物車
-        });
-        $('.cart').click(function () {
-            $('.overlay2').fadeIn(); // 顯示覆蓋層
-            $('#incart').css('right', '0'); // 顯示購物車
-        });
-
-
-        // 隱藏購物車和覆蓋層
-        $('.cancel').click(function () {
-            $('.overlay2').fadeOut(); // 隱藏覆蓋層
-            $('#incart').css('right', '-500px'); // 隱藏購物車
-        });
-        $('.overlay2').click(function () {
-            $(this).fadeOut(); // 隱藏覆蓋層
-            $('#incart').css('right', '-500px'); // 隱藏購物車
-        });
-
-        $('.incartTotal button').click(function(){
-            $('.incartTotal button').text('Thank You!')
-        }); */
+        /*         // 顯示購物車和覆蓋層
+                $('.atc').click(function () {
+                    $('.overlay2').fadeIn(); // 顯示覆蓋層
+                    $('#incart').css('right', '0'); // 顯示購物車
+                });
+                $('.cart').click(function () {
+                    $('.overlay2').fadeIn(); // 顯示覆蓋層
+                    $('#incart').css('right', '0'); // 顯示購物車
+                });
+        
+        
+                // 隱藏購物車和覆蓋層
+                $('.cancel').click(function () {
+                    $('.overlay2').fadeOut(); // 隱藏覆蓋層
+                    $('#incart').css('right', '-500px'); // 隱藏購物車
+                });
+                $('.overlay2').click(function () {
+                    $(this).fadeOut(); // 隱藏覆蓋層
+                    $('#incart').css('right', '-500px'); // 隱藏購物車
+                });
+        
+                $('.incartTotal button').click(function(){
+                    $('.incartTotal button').text('Thank You!')
+                }); */
 
 
 
