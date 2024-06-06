@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" href="./img/logo.svg">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <header id="topbar">
+        <h1 class="logo">
+            <a href="index.html"><img src="./img/title.svg" alt="Tori's Artwork"></a>
+        </h1>
+        <div class="nav-box">
+
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav>
+                <ul class="menu">
+                    <button class="cart">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34 36C31.78 36 30 37.78 30 40C30 41.0609 30.4214 42.0783 31.1716 42.8284C31.9217 43.5786 32.9391 44 34 44C35.0609 44 36.0783 43.5786 36.8284 42.8284C37.5786 42.0783 38 41.0609 38 40C38 38.9391 37.5786 37.9217 36.8284 37.1716C36.0783 36.4214 35.0609 36 34 36ZM2 4V8H6L13.2 23.18L10.48 28.08C10.18 28.64 10 29.3 10 30C10 31.0609 10.4214 32.0783 11.1716 32.8284C11.9217 33.5786 12.9391 34 14 34H38V30H14.84C14.7074 30 14.5802 29.9473 14.4864 29.8536C14.3927 29.7598 14.34 29.6326 14.34 29.5C14.34 29.4 14.36 29.32 14.4 29.26L16.2 26H31.1C32.6 26 33.92 25.16 34.6 23.94L41.76 11C41.9 10.68 42 10.34 42 10C42 9.46957 41.7893 8.96086 41.4142 8.58579C41.0391 8.21071 40.5304 8 40 8H10.42L8.54 4M14 36C11.78 36 10 37.78 10 40C10 41.0609 10.4214 42.0783 11.1716 42.8284C11.9217 43.5786 12.9391 44 14 44C15.0609 44 16.0783 43.5786 16.8284 42.8284C17.5786 42.0783 18 41.0609 18 40C18 38.9391 17.5786 37.9217 16.8284 37.1716C16.0783 36.4214 15.0609 36 14 36Z"
+                                fill="#E931CC" />
+                        </svg>
+                        <span class="cart-count"></span>
+                    </button>
+                    <li><a href="index.html">DIGITAL ART</a></li>
+                    <li><a href="plastic.html">PLASTIC ART</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <div class="bannerContainer">
+                <div class="bannerImg cycle-slideshow" data-cycle-loader="wait" data-cycle-pager=".cycle-pager">
+                    <img src="./img/illus/missing-call.jpg" alt="">
+                    <img src="./img/illus/dont-wake-up.jpg" alt="">
+                    <img src="./img/plastic/2017/01.jpg" alt="">
+                    <img src="./img/plastic/2018/01.jpg" alt="">
+                    <img src="./img/illus/escape.jpg" alt="">
+                </div>
+                <div class="cycle-pager"></div> <!-- 圓點容器 -->
+            </div>
+
+            <section id="items">
+                <div class="row">
+                    <div class="item">
+                        <div class="imgContainer">
+                            <!--                         <a href="#" class="imgItem it01"></a> -->
+                            <a href="./product.html" class="imgItem it01">
+                                <img src="./img/illus/staircase.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">staircase</a>
+                        <br>
+                        <a href="./product.html" class="price">$1500</a>
+                    </div>
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" class="imgItem it02">
+                                <img src="./img/illus/moai.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <sa href="./product.html" class="productName">moai</sa>
+                        <br>
+                        <a href="./product.html" class="price">$1500</a>
+                    </div>
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" href="./product.html" class="imgItem it01">
+                                <img src="./img/illus/chaos.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">chaos</a>
+                        <br>
+                        <a href="./product.html" class="price">$1500</a>
+                    </div>
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" class="imgItem it01">
+                                <img src="./img/illus/two.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">Callme</a>
+                        <br>
+                        <a href="./product.html" class="price">$1500</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" class="imgItem it01">
+                                <img src="./img/plastic/2022/a01.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">See You Later</a>
+                        <br>
+                        <a href="./product.html" class="price">$10000</a>
+                    </div>
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" class="imgItem it01">
+                                <img src="./img/plastic/2022/c01.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">Journey</a>
+                        <br>
+                        <a href="./product.html" class="price">$10000</a>
+                    </div>
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" class="imgItem it01">
+                                <img src="./img/plastic/2022/b01.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">Annoises</a>
+                        <br>
+                        <a href="./product.html" class="price">$10000</a>
+                    </div>
+                    <div class="item">
+                        <div class="imgContainer">
+                            <a href="./product.html" class="imgItem it01">
+                                <img src="./img/plastic/2018/03.jpg" alt="">
+                            </a>
+                            <button class="plus">
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_238_3188)">
+                                        <path
+                                            d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                            stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_238_3188">
+                                            <rect width="52" height="52" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <a href="./product.html" class="productName">Love To Death</a>
+                        <br>
+                        <a href="./product.html" class="price">$10000</a>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="cancel">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 22.1961C0 22.6745 0.187506 23.1334 0.521282 23.4717C0.85516 23.81 1.30793 24 1.78004 24C2.25214 24 2.70491 23.81 3.03879 23.4717L11.9893 14.4012L20.9612 23.4935C21.297 23.8222 21.7467 24.004 22.2136 23.9999C22.6804 23.9958 23.1269 23.8061 23.457 23.4715C23.7871 23.137 23.9744 22.6845 23.9784 22.2114C23.9825 21.7383 23.803 21.2825 23.4787 20.9422L14.6657 12.0109L23.4787 3.07957C23.8125 2.74121 24 2.28236 24 1.80392C24 1.32548 23.8125 0.866635 23.4787 0.528277C23.1448 0.190021 22.6921 0 22.22 0C21.7479 0 21.2951 0.190021 20.9612 0.528277L12.0107 9.59884L3.03879 0.50649C2.703 0.177821 2.25326 -0.0040429 1.78644 6.80742e-05C1.31962 0.00417904 0.873074 0.193934 0.54297 0.528467C0.212866 0.863001 0.0256212 1.31554 0.0215647 1.78863C0.0175081 2.26171 0.196965 2.71748 0.521282 3.05778L9.33435 11.9891L0.521282 20.9204C0.187506 21.2588 0 21.7176 0 22.1961Z"
+                        fill="#E931CC" />
+                </svg>
+            </div>
+            <div class="atcbtn"><button class="atc"><span>Add to Cart - $10000</span></button></div>
+        </div>
+    </div>
+
+    <section id="incart">
+        <div class="incartTitle">
+            <h3>Cart</h3>
+            <div class="cancel">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 22.1961C0 22.6745 0.187506 23.1334 0.521282 23.4717C0.85516 23.81 1.30793 24 1.78004 24C2.25214 24 2.70491 23.81 3.03879 23.4717L11.9893 14.4012L20.9612 23.4935C21.297 23.8222 21.7467 24.004 22.2136 23.9999C22.6804 23.9958 23.1269 23.8061 23.457 23.4715C23.7871 23.137 23.9744 22.6845 23.9784 22.2114C23.9825 21.7383 23.803 21.2825 23.4787 20.9422L14.6657 12.0109L23.4787 3.07957C23.8125 2.74121 24 2.28236 24 1.80392C24 1.32548 23.8125 0.866635 23.4787 0.528277C23.1448 0.190021 22.6921 0 22.22 0C21.7479 0 21.2951 0.190021 20.9612 0.528277L12.0107 9.59884L3.03879 0.50649C2.703 0.177821 2.25326 -0.0040429 1.78644 6.80742e-05C1.31962 0.00417904 0.873074 0.193934 0.54297 0.528467C0.212866 0.863001 0.0256212 1.31554 0.0215647 1.78863C0.0175081 2.26171 0.196965 2.71748 0.521282 3.05778L9.33435 11.9891L0.521282 20.9204C0.187506 21.2588 0 21.7176 0 22.1961Z"
+                        fill="#E931CC" />
+                </svg>
+            </div>
+        </div>
+        <div class="incartContent">
+            <div class="incartImg">
+                <img src="./img/plastic/2023/05.jpg" alt="">
+            </div>
+            <div class="incartInfo">
+                <h2 class="infoTitle">I Sea the Sunset</h2>
+                <div class="quaBtn">
+
+                    <button class="quaMinus">
+                        <svg width="40" height="40" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 26H34H18ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                fill="white" />
+                            <path
+                                d="M18 26H34M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                        </svg>
+
+                    </button>
+
+                    <p class="quaNum"></p>
+
+                    <button class="quaPlus">
+                        <svg width="40" height="40" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_238_3188)">
+                                <path
+                                    d="M16 26H36ZM26 36V16ZM50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                    fill="white" />
+                                <path
+                                    d="M16 26H36M26 36V16M50 26C50 39.2548 39.2548 50 26 50C12.7452 50 2 39.2548 2 26C2 12.7452 12.7452 2 26 2C39.2548 2 50 12.7452 50 26Z"
+                                    stroke="#E931CC" stroke-width="4" stroke-linecap="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_238_3188">
+                                    <rect width="52" height="52" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="infoPrice">$10000</h3>
+            </div>
+        </div>
+        <div class="incartTotal">
+            <div class="incartTotalContent">
+                <p>Total:</p>
+                <div class="incartPrice">$10000</div>
+            </div>
+            <button>
+                <p>Check Out</p>
+            </button>
+        </div>
+    </section>
+
+
+    <div class="overlay2"></div>
+
+
+
+    <footer id="contact">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+                <span>
+                    Hi, I'm Tori. Welcome to my website. Here you can see some illustrations and some plastic arts. You
+                    can also buy my works in the SHOP. Have a nice day!</span>
+
+            </div>
+
+        </div>
+        <div class="contactTable">
+            <div class="contactText">CONTACT
+                <nav class="contactIcon">
+                    <ul class="icon">
+                        <li><a href="#" class="icon-ig"></a></li>
+                        <li><a href="#" class="icon-fb"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="topbtn">TOP<svg width="85" height="43" viewBox="0 0 85 43" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M83.129 40.4644C81.9307 41.4945 80.3056 42.0732 78.6111 42.0732C76.9166 42.0732 75.2915 41.4945 74.0932 40.4644L42.4614 13.2638L10.8296 40.4644C9.62443 41.4653 8.01023 42.0192 6.33473 42.0067C4.65923 41.9942 3.05647 41.4163 1.87166 40.3974C0.686852 39.3786 0.0148087 38.0004 0.000244141 36.5596C-0.0143127 35.1188 0.629791 33.7307 1.79382 32.6943L37.9435 1.60873C39.1419 0.578568 40.767 -0.000148773 42.4614 -0.000148773C44.1559 -0.000148773 45.781 0.578568 46.9793 1.60873L83.129 32.6943C84.327 33.7248 85 35.1223 85 36.5793C85 38.0364 84.327 39.4339 83.129 40.4644Z"
+                    fill="white" />
+            </svg>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.cycle.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // 漢堡
+            $('.hamburger').click(function () {
+                // 交替 三 跟 X
+                $(this).toggleClass('is-active');
+                $('.menu').toggleClass('show');
+                $('.menu').toggleClass('hide');
+            });
+
+
+            // 頁首滾動效果
+            let lastScrollTop = 0;
+            let headerHeight = $('#topbar').outerHeight();
+
+            $(window).scroll(function () {
+                let currentScroll = $(this).scrollTop();
+
+                if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+                    // 往下滾動且未滾動至頁首，隱藏 header
+                    $('#topbar').css({
+                        'top': -headerHeight + 'px',
+                        'transition': 'top 1s' // 添加過渡效果
+                    });
+                } else if (currentScroll === 0) {
+                    // 滾動至頁首，顯示 header
+                    $('#topbar').css({
+                        'top': '0',
+                        'transition': 'top 0.3s' // 添加過渡效果
+                    });
+                }
+
+                lastScrollTop = currentScroll;
+            });
+
+
+            $(function () {
+    var bannerImg = $(".bannerImg img");
+
+    function setImgWidth() {
+        var containerWidth = $(".bannerImg").width();
+        bannerImg.css("max-width", containerWidth);
+    }
+
+    // 初始化时设置图片宽度
+    setImgWidth();
+
+    // 窗口大小改变时重新设置图片宽度
+    $(window).resize(function () {
+        setImgWidth();
+    });
+
+    $(".cycle-slideshow").cycle({
+        pager: '.cycle-pager' // 指定页码圆点的容器
+    }); // 初始化轮播
+});
+
+
+            $('.topbtn svg').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+            });
+
+
+
+            var cartCount = 0; // 初始化購物車數量為 0
+
+            // 點擊 .plus 按鈕切換覆蓋層的顯示狀態
+            $(".plus").click(function () {
+                $("#overlay").toggle();
+
+                // 恢復 .atc 到原始狀態
+                $(".atc span").text("Add to Cart - $10000");
+                $(".atc").css({
+                    'color': 'white',
+                    'background-color': '#E931CC'
+                });
+            });
+
+            // 點擊 .cancel 關閉 .overlay 並恢復 .atc 到原始狀態
+            $(".cancel").click(function () {
+                closeOverlay();
+            });
+
+            // 點擊 .atc 顯示已加入購物車的狀態
+            $(".atc").click(function () {
+                $(".atc span").text("已加入購物車！");
+                $(".atc").css({
+                    'color': '#E931CC',
+                    'background-color': 'white'
+                });
+                
+                // 更新購物車數量並顯示在 .cart 的右上角
+                cartCount++;
+                $(".cart-count").text(cartCount).show();
+            });
+
+            // 點擊 .overlay 背景時關閉 .overlay
+            $("#overlay").click(function (event) {
+                if (event.target === this) {
+                    closeOverlay();
+                }
+            });
+
+            // 關閉 .overlay 覆蓋層並恢復 .atc 到原始狀態的函數
+            function closeOverlay() {
+                $("#overlay").hide();
+                $(".atc span").text("Add to Cart - $10000");
+                $(".atc").css({
+                    'color': 'white',
+                    'background-color': '#E931CC'
+                });
+            }
+
+        });
+
+/*         // 顯示購物車和覆蓋層
+        $('.atc').click(function () {
+            $('.overlay2').fadeIn(); // 顯示覆蓋層
+            $('#incart').css('right', '0'); // 顯示購物車
+        });
+        $('.cart').click(function () {
+            $('.overlay2').fadeIn(); // 顯示覆蓋層
+            $('#incart').css('right', '0'); // 顯示購物車
+        });
+
+
+        // 隱藏購物車和覆蓋層
+        $('.cancel').click(function () {
+            $('.overlay2').fadeOut(); // 隱藏覆蓋層
+            $('#incart').css('right', '-500px'); // 隱藏購物車
+        });
+        $('.overlay2').click(function () {
+            $(this).fadeOut(); // 隱藏覆蓋層
+            $('#incart').css('right', '-500px'); // 隱藏購物車
+        });
+
+        $('.incartTotal button').click(function(){
+            $('.incartTotal button').text('Thank You!')
+        }); */
+
+
+
+    </script>
+
+
+</body>
+
+</html>
