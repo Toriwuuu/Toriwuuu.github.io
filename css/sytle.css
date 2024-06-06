@@ -377,7 +377,7 @@ a {
 }
 @media (max-width: 640px) {
   #digitalArt .photo {
-    padding: 30px 0;
+    padding: 30px;
     margin-top: 700px;
     height: 450px;
   }
