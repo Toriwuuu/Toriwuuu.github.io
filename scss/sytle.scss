@@ -268,10 +268,13 @@ a {
 
         @media (max-width:640px) {
             padding: 30px;
-            margin-top: 600px;
+            margin-top: 800px;
             height: calc(150px * 3);
         }
+        @media (max-width:420px){
+            margin-top: 600px;
 
+        }
         .carousel {
             display: flex;
             flex-direction: column-reverse;
